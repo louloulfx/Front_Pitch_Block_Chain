@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Pitch</title>
+
+</head>
+
+<body>
+    <div class="" id="myHeader">
+        <a href="index.html" class="logo"></a>
+        <img src="logo_pitch.png" alt="logo" id="logo" style="float:left" ;>
+        <nav class="header-nav">
+        </nav>
+    </div>
+
+    <script type="text/javascript">
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <div class="section0">
+        <img src="scroll.gif">
+    </div>
+
+    <main class="index flex">
+        <div class="cover">
+            <a href="" class="cover"></a>
+        </div>
+        <div class="section1">
+            <article>
+                <img src="bel-ami.png" alt="{title}cover">
+                <a class="title">Bel-Ami - Guy de Maupassant</a>
+                <p>
+                    Bel-Ami est un roman réaliste de Guy de Maupassant (1850-1893), publié en 1885. Le roman paraît
+                    d'abord sous forme de feuilleton dans le quotidien Gil Blas, avant d'être édité en volume aux
+                    éditions Ollendorff.
+                </p>
+                <a href="#" class="cart-btn">Lire</a>
+            </article>
+    </main>
+
+</body>
+
+</html>
