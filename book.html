@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bel-Ami - Guy de Maupassant</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      p {
+        font-size: 32px;
+      }
+      #text {
+        margin: 20px 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="" id="myHeader">
+      <a href="index.html" class="logo"></a>
+      <img src="logo_pitch.png" alt="logo" id="logo" style="float:left" ; />
+      <nav class="header-nav"></nav>
+    </div>
+    <div id="app">
+      <div id="text" v-if="texte">
+        <div v-for="text in texte">
+          <p>{{ text.firstregistration }} - Page {{ text.nbPageStart+1 }}</p>
+          <p>{{ text.secondRegistration }} - Page {{ text.nbPageStart+2 }}</p>
+          <p>{{ text.thirdRegistration }} - Page {{ text.nbPageStart+3 }}</p>
+          <p>{{ text.fourthRegistration }} - Page {{ text.nbPageStart+4 }}</p>
+          <p>{{ text.fifthRegistration }} - Page {{ text.nbPageStart+5 }}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./main.js"></script>
+</html>
